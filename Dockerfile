@@ -7,4 +7,6 @@ EXPOSE 80
 EXPOSE 8888
 
 RUN pip install -r /home/jovyan/requirements.txt
+RUN git clone https://github.com/dkharazi/anfpy.git
+
 CMD jupyter notebook --allow-root
